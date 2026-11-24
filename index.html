@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phuoc Nguyen — Explore The World My Way</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Exploring Hidden Wonders Across The World! Discover the personal travel journey, destinations, and unforgettable moments of Phuoc Nguyen.">
+  <meta name="author" content="Phuoc Nguyen">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/logo_brand.png">
+
+  <!-- Google Fonts: DM Sans + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Modular CSS Architecture -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="header">
+    <div class="site-header__container">
+      <a href="#home" class="site-header__logo" aria-label="Phuoc Nguyen Homepage">
+        <img src="assets/icons/logo_brand.png" alt="" width="32" height="32" class="site-header__logo-icon">
+        <span class="site-header__logo-text">PhuocNguyen</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="site-nav__list">
+          <li><a href="#home" class="site-nav__link">HOME</a></li>
+          <li><a href="#about" class="site-nav__link">MY STORY</a></li>
+          <li><a href="#journey" class="site-nav__link">DESTINATIONS</a></li>
+          <li><a href="#moments" class="site-nav__link">GALLERY</a></li>
+          <li><a href="#footer" class="site-nav__link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__action">
+        <a href="#journey" class="site-header__btn-explore">Explore</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home" aria-label="Introduction">
+      <div class="hero-container">
+        <div class="hero-banner">
+          <!-- Step Indicators (1-2-3) -->
+          <div class="hero-steps" aria-hidden="true">
+            <div class="hero-step hero-step-1">1</div>
+            <div class="hero-step-line"></div>
+            <div class="hero-step hero-step-2">2</div>
+            <div class="hero-step-line"></div>
+            <div class="hero-step hero-step-3">3</div>
+          </div>
+
+          <!-- Hero Content (Titles & Buttons) -->
+          <div class="hero-content">
+            <p class="hero-subtitle">EXPLORE THE WORLD MY WAY</p>
+            <h1 class="hero-title">Exploring Hidden<br>Wonders Across<br>The World!</h1>
+            <div class="hero-actions">
+              <a href="#about" class="hero-btn-main">See My Stories</a>
+              <button class="hero-btn-play" aria-label="Watch travel video story">
+                <span class="hero-btn-play__inner">
+                  <img src="assets/icons/play.png" alt="" width="17" height="20">
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Bottom-Right "Know more" Cluster -->
+          <div class="hero-knowmore">
+            <a href="#journey" class="hero-knowmore__top" aria-label="Know more about awesome places">
+              <span class="hero-knowmore__title">Know more</span>
+              <img src="assets/icons/arrow-right.png" alt="" class="hero-knowmore__arrow" width="32" height="32">
+            </a>
+            <div class="hero-knowmore__bottom">
+              <div class="hero-knowmore__avatars" aria-hidden="true">
+                <img src="assets/images/MountFuji.jpg" alt="" class="hero-avatar-circle" width="72" height="72">
+                <img src="assets/images/EiffelTower.jpg" alt="" class="hero-avatar-circle" width="72" height="72">
+                <img src="assets/images/LeaningTowerOfPisa.jpg" alt="" class="hero-avatar-circle" width="72" height="72">
+                <img src="assets/images/ThuanPhuocBridge.jpg" alt="" class="hero-avatar-circle" width="72" height="72">
+                <img src="assets/images/GreatWallOfChina.jpg" alt="" class="hero-avatar-circle" width="72" height="72">
+              </div>
+              <div class="hero-knowmore__info">
+                <h4 class="hero-knowmore__places-title">Awsome Places</h4>
+                <p class="hero-knowmore__places-desc">Discover The World One Adventure At A Time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: A LITTLE ABOUT ME -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-inner">
+          <div class="about-image-wrapper reveal-on-scroll">
+            <div class="about-decor about-decor-blue" aria-hidden="true"></div>
+            <div class="about-decor about-decor-yellow" aria-hidden="true"></div>
+            <div class="about-image-mask">
+              <img src="assets/images/ALittleAboutMe.jpg" alt="Phuoc Nguyen" class="about-avatar-img" width="670" height="670" loading="lazy">
+            </div>
+          </div>
+          <div class="about-content reveal-on-scroll reveal-delay-2">
+            <h2 class="about-title">A Little About Me</h2>
+            <p class="about-desc">My name is <strong class="about-highlight">Phuoc Nguyen</strong>, and I am a curious person who loves discovering new things and exploring the unknown. I am always excited to learn about different cultures, meet new people, and experience unique adventures.<br>One of my biggest dreams is to travel to distant and fascinating destinations around the world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: MY GLOBAL JOURNEY -->
+    <section class="journey-section" id="journey">
+      <div class="journey-container">
+        <div class="journey-inner">
+          <div class="journey-header reveal-on-scroll">
+            <div class="journey-header__title-group">
+              <h2 class="journey-title">My Global Journey</h2>
+              <p class="journey-desc">Discovering the culture, beauty, and unique landmarks of five remarkable countries around the world.</p>
+            </div>
+            <!-- Carousel Navigation (Two #E5E5E5 buttons with headless chevrons) -->
+            <div class="journey-nav-controls">
+              <button class="journey-nav-btn btn-prev" aria-label="Previous destination cards">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button class="journey-nav-btn btn-next" aria-label="Next destination cards">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carousel Cards Track (Container 1316px, exact 3 cards visible) -->
+          <div class="journey-slider-container">
+            <div class="journey-slider-track">
+              <!-- Card 1: Mount Fuji -->
+              <article class="journey-card reveal-on-scroll">
+                <div class="journey-card__image-wrap">
+                  <img src="assets/images/MountFuji.jpg" alt="Mount Fuji, Japan" class="journey-card__image" width="390" height="250" loading="lazy">
+                </div>
+                <div class="journey-card__info">
+                  <div class="journey-card__text">
+                    <h3 class="journey-card__title">Mount Fuji</h3>
+                    <div class="journey-card__location">
+                      <img src="assets/icons/location.png" alt="" width="16" height="20">
+                      <span>Fujinomiya, Japan</span>
+                    </div>
+                  </div>
+                  <div class="journey-card__rating">
+                    <img src="assets/icons/star.png" alt="" width="16" height="16">
+                    <span>4.6</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2: Eiffel Tower -->
+              <article class="journey-card reveal-on-scroll reveal-delay-1">
+                <div class="journey-card__image-wrap">
+                  <img src="assets/images/EiffelTower.jpg" alt="Eiffel Tower, Paris" class="journey-card__image" width="390" height="250" loading="lazy">
+                </div>
+                <div class="journey-card__info">
+                  <div class="journey-card__text">
+                    <h3 class="journey-card__title">Eiffel Tower</h3>
+                    <div class="journey-card__location">
+                      <img src="assets/icons/location.png" alt="" width="16" height="20">
+                      <span>Paris, France</span>
+                    </div>
+                  </div>
+                  <div class="journey-card__rating">
+                    <img src="assets/icons/star.png" alt="" width="16" height="16">
+                    <span>4.6</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3: Leaning Tower of Pisa -->
+              <article class="journey-card reveal-on-scroll reveal-delay-2">
+                <div class="journey-card__image-wrap">
+                  <img src="assets/images/LeaningTowerOfPisa.jpg" alt="Leaning Tower of Pisa, Italy" class="journey-card__image" width="390" height="250" loading="lazy">
+                </div>
+                <div class="journey-card__info">
+                  <div class="journey-card__text">
+                    <h3 class="journey-card__title">Leaning Tower of Pisa</h3>
+                    <div class="journey-card__location">
+                      <img src="assets/icons/location.png" alt="" width="16" height="20">
+                      <span>Pisa, Italy</span>
+                    </div>
+                  </div>
+                  <div class="journey-card__rating">
+                    <img src="assets/icons/star.png" alt="" width="16" height="16">
+                    <span>4.6</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4: Thuan Phuoc Bridge -->
+              <article class="journey-card reveal-on-scroll reveal-delay-3">
+                <div class="journey-card__image-wrap">
+                  <img src="assets/images/ThuanPhuocBridge.jpg" alt="Thuan Phuoc Bridge, Da Nang" class="journey-card__image" width="390" height="250" loading="lazy">
+                </div>
+                <div class="journey-card__info">
+                  <div class="journey-card__text">
+                    <h3 class="journey-card__title">Thuan Phuoc Bridge</h3>
+                    <div class="journey-card__location">
+                      <img src="assets/icons/location.png" alt="" width="16" height="20">
+                      <span>Da Nang, Vietnam</span>
+                    </div>
+                  </div>
+                  <div class="journey-card__rating">
+                    <img src="assets/icons/star.png" alt="" width="16" height="16">
+                    <span>4.6</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 5: Great Wall of China -->
+              <article class="journey-card reveal-on-scroll reveal-delay-4">
+                <div class="journey-card__image-wrap">
+                  <img src="assets/images/GreatWallOfChina.jpg" alt="Great Wall of China, Beijing" class="journey-card__image" width="390" height="250" loading="lazy">
+                </div>
+                <div class="journey-card__info">
+                  <div class="journey-card__text">
+                    <h3 class="journey-card__title">Great Wall of China</h3>
+                    <div class="journey-card__location">
+                      <img src="assets/icons/location.png" alt="" width="16" height="20">
+                      <span>Beijing, China</span>
+                    </div>
+                  </div>
+                  <div class="journey-card__rating">
+                    <img src="assets/icons/star.png" alt="" width="16" height="16">
+                    <span>4.6</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: MOMENTS AROUND THE WORLD -->
+    <section class="moments-section" id="moments">
+      <div class="moments-container">
+        <div class="moments-header reveal-on-scroll">
+          <h2 class="moments-title">Moments Around The World</h2>
+        </div>
+
+        <div class="moments-list">
+          <!-- Moment 1: France (Image Left, Content Right) -->
+          <article class="moment-row reveal-on-scroll">
+            <div class="moment-image-col">
+              <img src="assets/images/EiffelTower.jpg" alt="Eiffel Tower" class="moment-image" width="640" height="460" loading="lazy">
+            </div>
+            <div class="moment-content-col">
+              <div class="moment-line" aria-hidden="true"></div>
+              <div class="moment-text-group">
+                <span class="moment-tag tag-france">FRANCE</span>
+                <h3 class="moment-title">My Moment At The Eiffel Tower</h3>
+                <p class="moment-desc">Standing before Paris's most iconic landmark and experiencing the charm of the City of Love through my own journey.</p>
+                <a href="#about" class="moment-readmore">Read more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Moment 2: Japan (Content Left, Image Right) -->
+          <article class="moment-row moment-row--reverse reveal-on-scroll">
+            <div class="moment-content-col">
+              <div class="moment-line" aria-hidden="true"></div>
+              <div class="moment-text-group">
+                <span class="moment-tag tag-japan">JAPAN</span>
+                <h3 class="moment-title">My Moment At Mount Fuji</h3>
+                <p class="moment-desc">Witnessing Japan’s most famous peak rising above the clouds and embracing the peaceful beauty of nature around me.</p>
+                <a href="#about" class="moment-readmore">Read more</a>
+              </div>
+            </div>
+            <div class="moment-image-col">
+              <img src="assets/images/MountFuji.jpg" alt="Mount Fuji" class="moment-image" width="640" height="460" loading="lazy">
+            </div>
+          </article>
+
+          <!-- Moment 3: Italy (Image Left, Content Right) -->
+          <article class="moment-row reveal-on-scroll">
+            <div class="moment-image-col">
+              <img src="assets/images/LeaningTowerOfPisa.jpg" alt="Leaning Tower of Pisa" class="moment-image" width="640" height="460" loading="lazy">
+            </div>
+            <div class="moment-content-col">
+              <div class="moment-line" aria-hidden="true"></div>
+              <div class="moment-text-group">
+                <span class="moment-tag tag-italy">ITALY</span>
+                <h3 class="moment-title">My Moment At The Leaning Tower Of Pisa</h3>
+                <p class="moment-desc">Standing beside Italy’s legendary tilted landmark and admiring its unique architecture and timeless history.</p>
+                <a href="#about" class="moment-readmore">Read more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Moment 4: Vietnam (Content Left, Image Right) -->
+          <article class="moment-row moment-row--reverse reveal-on-scroll">
+            <div class="moment-content-col">
+              <div class="moment-line" aria-hidden="true"></div>
+              <div class="moment-text-group">
+                <span class="moment-tag tag-vietnam">VIETNAM</span>
+                <h3 class="moment-title">My Moment At Thuan Phuoc Bridge</h3>
+                <p class="moment-desc">Enjoying stunning river views from Da Nang’s iconic suspension bridge and experiencing the city’s modern charm.</p>
+                <a href="#about" class="moment-readmore">Read more</a>
+              </div>
+            </div>
+            <div class="moment-image-col">
+              <img src="assets/images/ThuanPhuocBridge.jpg" alt="Thuan Phuoc Bridge" class="moment-image" width="640" height="460" loading="lazy">
+            </div>
+          </article>
+
+          <!-- Moment 5: China (Image Left, Content Right) -->
+          <article class="moment-row reveal-on-scroll">
+            <div class="moment-image-col">
+              <img src="assets/images/GreatWallOfChina.jpg" alt="Great Wall of China" class="moment-image" width="640" height="460" loading="lazy">
+            </div>
+            <div class="moment-content-col">
+              <div class="moment-line" aria-hidden="true"></div>
+              <div class="moment-text-group">
+                <span class="moment-tag tag-china">CHINA</span>
+                <h3 class="moment-title">My Moment At The Great Wall Of China</h3>
+                <p class="moment-desc">Walking along one of the world’s greatest wonders and discovering the remarkable history behind every stone.</p>
+                <a href="#about" class="moment-readmore">Read more</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <!-- Brand & Slogan -->
+        <div class="footer-brand">
+          <div class="footer-brand__content">
+            <div class="footer-logo">
+              <img src="assets/icons/logo_brand.png" alt="Logo" class="footer-logo__icon" width="32" height="32">
+              <span class="footer-logo__text">PHUOC NGUYEN</span>
+            </div>
+            <div class="footer-slogan">
+              <p>Explore The World One Adventure At A Time.</p>
+              <p>Discover New Places, Create Amazing Memories.</p>
+            </div>
+          </div>
+          <div class="footer-socials">
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/facebook.png" alt="Facebook" width="20" height="20">
+            </a>
+            <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.png" alt="Instagram" width="20" height="20">
+            </a>
+            <a href="https://twitter.com" class="social-icon-btn" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/twitter.png" alt="Twitter" width="20" height="20">
+            </a>
+            <a href="https://linkedin.com" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/linkedin.png" alt="LinkedIn" width="20" height="20">
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 Link Columns Group -->
+        <div class="footer-nav-group">
+          <!-- Column 1: My Journey -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">My Journey</h4>
+            <ul class="footer-links">
+              <li><a href="#about" class="footer-link">About Me</a></li>
+              <li><a href="#home" class="footer-link">Travel Goals</a></li>
+              <li><a href="#moments" class="footer-link">Travel Gallery</a></li>
+              <li><a href="#moments" class="footer-link">Memories</a></li>
+              <li><a href="#footer" class="footer-link">Contact Me</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Destinations -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Destinations</h4>
+            <ul class="footer-links">
+              <li><a href="#journey" class="footer-link">Paris</a></li>
+              <li><a href="#journey" class="footer-link">Mount Fuji</a></li>
+              <li><a href="#journey" class="footer-link">Rome</a></li>
+              <li><a href="#journey" class="footer-link">Testimonials</a></li>
+              <li><a href="#journey" class="footer-link">Sydney</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: TRAVEL STORIES -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">TRAVEL STORIES</h4>
+            <ul class="footer-links">
+              <li><a href="#moments" class="footer-link">Adventures</a></li>
+              <li><a href="#moments" class="footer-link">Experiences</a></li>
+              <li><a href="#moments" class="footer-link">Culture</a></li>
+              <li><a href="#moments" class="footer-link">Photography</a></li>
+              <li><a href="#moments" class="footer-link">Discoveries</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: FUTURE DREAMS -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">FUTURE DREAMS</h4>
+            <ul class="footer-links">
+              <li><a href="#journey" class="footer-link">Europe Tour</a></li>
+              <li><a href="#journey" class="footer-link">Asia Journey</a></li>
+              <li><a href="#journey" class="footer-link">America Trip</a></li>
+              <li><a href="#journey" class="footer-link">Ocean Adventures</a></li>
+              <li><a href="#journey" class="footer-link">World Explorer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <svg class="footer-copyright__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 16.5C9.51 16.5 7.5 14.49 7.5 12C7.5 9.51 9.51 7.5 12 7.5C13.66 7.5 15.14 8.41 15.89 9.77L14.16 10.77C13.76 10.01 12.94 9.5 12 9.5C10.62 9.5 9.5 10.62 9.5 12C9.5 13.38 10.62 14.5 12 14.5C12.94 14.5 13.76 13.99 14.16 13.23L15.89 14.23C15.14 15.59 13.66 16.5 12 16.5Z" fill="#101010" fill-opacity="0.6"/>
+          </svg>
+          <span class="footer-copyright__text">2026 PHUOC NGUYEN ALL Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script (ES6+ Module) -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
