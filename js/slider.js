@@ -5,7 +5,7 @@
  * When fewer than 3 cards remain, the empty space is left visible (no loop/wrap).
  * No vertical scroll on the card container.
  */
-export function initJourneySlider() {
+window.initJourneySlider = function initJourneySlider() {
   const container = document.querySelector('.journey-slider-container');
   const track     = document.querySelector('.journey-slider-track');
   const btnPrev   = document.querySelector('.btn-prev');

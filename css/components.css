@@ -119,3 +119,145 @@
 .link-readmore:hover::after {
   transform: translateX(6px);
 }
+
+/* Interactive Card & Moment Image Cursors */
+.journey-card__image-wrap[data-target] {
+  cursor: pointer;
+}
+
+.moment-image-col {
+  cursor: zoom-in;
+}
+
+/* Moment Highlight Pulse when jumped from Journey Card */
+@keyframes momentHighlight {
+  0% {
+    box-shadow: 0 0 0 0 rgba(41, 134, 254, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(41, 134, 254, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(41, 134, 254, 0);
+  }
+}
+
+.moment-row.is-highlighted .moment-image-col {
+  animation: momentHighlight 1.1s ease-out;
+}
+
+/* Image Lightbox Popup */
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.image-lightbox[hidden] {
+  display: none;
+}
+
+.image-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(16, 16, 16, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  cursor: zoom-out;
+}
+
+.image-lightbox__dialog {
+  position: relative;
+  z-index: 1;
+  max-width: min(1080px, 92vw);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0.94);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.image-lightbox.is-open .image-lightbox__dialog {
+  transform: scale(1);
+}
+
+.image-lightbox__close {
+  position: absolute;
+  top: -44px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.image-lightbox__close:hover {
+  background-color: #2986FE;
+  border-color: #2986FE;
+  transform: scale(1.06);
+}
+
+.image-lightbox__figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.image-lightbox__img {
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  background-color: #101010;
+}
+
+.image-lightbox__caption {
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .image-lightbox {
+    padding: 16px;
+  }
+
+  .image-lightbox__close {
+    top: -42px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .image-lightbox__caption {
+    font-size: 15px;
+  }
+}

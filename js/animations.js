@@ -1,7 +1,7 @@
 /**
  * UI Interactions, Mobile Navigation and Scroll Reveal Animations
  */
-export function initAnimations() {
+window.initAnimations = function initAnimations() {
   // 1. Mobile Menu Drawer
   const menuToggle = document.querySelector('.menu-toggle');
   const siteNav = document.querySelector('.site-nav');
